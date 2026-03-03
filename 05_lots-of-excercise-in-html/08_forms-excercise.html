@@ -1,0 +1,70 @@
+<!-- +++++++++++++++ Exercise 08 +++++++++++++++ -->
+
+<!-- Q] Login Form Exercise
+1. Create a Login Form using HTML.
+2. Centre the form on the web page and add a styled background to the page.
+3. Include input fields for: Name, Date of Birth, Phone Number, E-mail ID, Password, Confirm Password
+4. Add Clear and Sign Up buttons, aligned in the centre.
+5. Place the entire form inside a bordered box.
+6. Ensure the form is properly aligned for a clean, neat, and user-friendly layout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 08 HTML Forms</title>
+</head>
+<body style="text-align: center; background-color: #d5d4d4;">
+    <form action="../15_thankyou-form.html" method="get" style="margin: 100px; padding:50px">
+        <fieldset style="border-color: #000; letter-spacing: 1px">
+            <legend style="font-weight: bold; text-align: center; font-size: 30px; margin: 20px; background-color: #504f4f; color: #fff; padding: 10px;">Login Form</legend>
+        <div>
+            <label for="your-full-name">Your Full Name: </label>
+            <input type="text" name="your-full-name" id="your-full-name" placeholder="Enter your full name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="date-of-birth">Date of Birth: </label>
+            <input type="date" name="date-of-birth" id="date-of-birth" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone-number">Phone Number: </label>
+            <input type="tel" name="phone-number" id="phone-number" placeholder="Enter your phone number" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email-id">Email Id: </label>
+            <input type="email" name="email-id" id="email-id" placeholder="Enter your email id" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="confirm-password">Confirm Password: </label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+        </div>
+
+        <br>
+        <div>
+            <input type="reset" value="CLEAR" style="padding: 8px;">
+            <input type="submit" value="SIGN UP" style="padding: 8px;">
+        </div>
+        </fieldset>
+    </form>
+</body>
+</html>

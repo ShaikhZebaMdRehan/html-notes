@@ -1,0 +1,200 @@
+<!-- +++++++++++++++ Exercise 06 +++++++++++++++ -->
+
+<!-- Q] Tables Exercise
+Create 3 tables:
+1. Employees Table (Basic)
+=> Add a main heading at the top of the table.
+=> Include the following columns: Name, Age, Gender.
+=> Add 4 employees name to the table.
+=> Apply zebra stripes (alternate row coloring) to the table rows.
+
+2. Student Timetable
+=> Create a weekly timetable for students.
+=> Display the days (Monday to Saturday) in rows.
+=> After two rows of days, add a “LUNCH” row that spans the full width of the table.
+=> Add an “Hours” column that spans the full height of the table, from the Days row to the last row.
+
+3. Employees Table (Detailed)
+=> Add a main heading at the top of the table.
+=> Include the following columns: Name, Age, Gender, Average (Height & Weight),Job Title, Work Experience
+=> Add 6 employees name to the table.
+=> Use zebra stripes (alternate row coloring) to highlight the rows. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 06 Tables</title>
+    <style>
+        .employeesTableBasic tbody tr:nth-child(odd) {
+            background-color: #b5d3f2;
+        }
+
+        .employeesTableDetailed tbody tr:nth-child(odd) {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body style="margin: 50px 20px;">
+    <!-- Employees Table (Basic) -->
+    <table border="2" cellpadding="5" style="border-collapse: collapse; white-space: nowrap; text-align: center;" class="employeesTableBasic">
+        <caption style="font-size: 25px; font-weight: bold; padding-bottom: 10px;">Employees Table (Basic)</caption>
+        <tbody>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+            </tr>
+            <tr>
+                <td>Shivam</td>
+                <td>20</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>23</td>
+                <td>Male</td>
+            </tr>
+            <tr>
+                <td>Mansi</td>
+                <td>21</td>
+                <td>Female</td>
+            </tr>
+            <tr>
+                <td>Sahil</td>
+                <td>24</td>
+                <td>Male</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br>
+
+    <!-- Student Timetable -->
+    <table border="5" cellpadding="5">
+        <thead>
+            <tr>
+                <th colspan="6" style="font-size: 25px; font-weight: bold; padding-bottom: 10px;">Student Timetable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="6">Hours</th>
+                <th>Mon</th>
+                <th>Tue</th>
+                <th>Wed</th>
+                <th>Thu</th>
+                <th>Fri</th>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td>Arts</td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: center; font-weight: bold;">LUNCH</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td rowspan="2">Projects</td>
+            </tr>
+            <tr>
+                <td>Computer</td>
+                <td>Maths</td>
+                <td>Computer</td>
+                <td>Maths</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <!-- Employees Table (Detailed) -->
+    <table border="5" cellpadding="5" class="employeesTableDetailed">
+        <caption style="font-size: 25px; font-weight: bold; padding-bottom: 10px;">Employees Table (Detailed)</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Name</th>
+                <th rowspan="2">Age</th>
+                <th rowspan="2">Gender</th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Job Title</th>
+                <th rowspan="2">Work Experience</th>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <th>Weight</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>20</td>
+                <td>Male</td>
+                <td>5.9</td>
+                <td>60</td>
+                <td>Software Engineer</td>
+                <td>5 Years</td>
+            </tr>
+            <tr>
+                <td>Ale</td>
+                <td>29</td>
+                <td>Male</td>
+                <td>5.5</td>
+                <td>50</td>
+                <td>WordPress Developer</td>
+                <td>3 Years</td>
+            </tr>
+            <tr>
+                <td>Jack</td>
+                <td>35</td>
+                <td>Male</td>
+                <td>4.3</td>
+                <td>55</td>
+                <td>Python Developer</td>
+                <td>7 Years</td>
+            </tr>
+            <tr>
+                <td>Mansi</td>
+                <td>25</td>
+                <td>Female</td>
+                <td>6.5</td>
+                <td>50</td>
+                <td>Java Developer</td>
+                <td>4 Years</td>
+            </tr>
+            <tr>
+                <td>Sahil</td>
+                <td>30</td>
+                <td>Male</td>
+                <td>6.6</td>
+                <td>74</td>
+                <td>Flutter Developer</td>
+                <td>6 Years</td>
+            </tr>
+            <tr>
+                <td>Shivam</td>
+                <td>26</td>
+                <td>Male</td>
+                <td>5.4</td>
+                <td>74</td>
+                <td>React Developer</td>
+                <td>2 Years</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

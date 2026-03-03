@@ -1,0 +1,90 @@
+<!-- +++++++++++++++ Exercise 07 +++++++++++++++ -->
+
+<!-- Q] Create a "Project Management" form using HTML Table. The form should contain the following fields organized inside a table:
+
+1. Project Name – a text input with a placeholder.
+2. Assigned To – a dropdown list.
+3. Start Date – a date input.
+4. End Date – a date input.
+5. Priority – radio buttons with options: High, Average, Low.
+6. Add Submit and Clear buttons at the bottom.
+
+The entire form must be displayed inside a bordered table with headings for each section (Project Name, Assigned To, Start Date, End Date, Priority). -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 07 HTML Form using Table</title>
+</head>
+<body style="background-color: lightgray; padding-top: 150px;">
+    <h2 style="text-align: center;">Project Management</h2>
+    <table border="2" cellspacing="3" align="center">
+        <tr>
+            <th>Project Name</th>
+            <td style="width: 50%;"></td>
+        </tr>
+
+        <tr>
+            <td>Project Name</td>
+            <td><input type="text" placeholder="project name"></td>
+        </tr>
+
+        <tr>
+            <th>Assigned to</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Assigned to</td>
+            <td>
+                <select>
+                <option value="HP">HP</option>
+                <option value="Dell">Dell</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Asus">Asus</option>
+                <option value="Mac Book">Mac Book</option>
+                <option value="Acer">Acer</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <th>Start Date</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Start Date</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <th>End Date</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>End Date</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <th>Priority</th>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td>Priority</td>
+            <td><input type="radio" name="gender">High <input type="radio" name="gender">Average <input type="radio" name="gender">Low</td>
+        </tr>
+
+        <tr>
+            <td align="center"><input type="submit" value="Clear"></td>
+            <td align="center"><input type="submit" value="Submit"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
